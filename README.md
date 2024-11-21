@@ -30,8 +30,9 @@ Create a directory named "MyLab" on the desktop.
 
 ## COMMAND AND OUTPUT
 
+```
 mkdir %userprofile%\Desktop\MyLab
-
+```
 ![1_mkdir](https://github.com/user-attachments/assets/b2c97dd3-0863-4481-8a62-027ad75b56f0)
 
 
@@ -40,8 +41,9 @@ Change to the "MyLab" directory and create an empty text file named "MyFile.txt"
 
 ## COMMAND AND OUTPUT
 
+```
 cd %userprofile%\Desktop\MyLab
-
+```
 ![2_cd](https://github.com/user-attachments/assets/4749e48a-d6c2-465c-b66c-467b535e741c)
 
 
@@ -54,16 +56,18 @@ List the contents of the "MyLab" directory.
 
 ## COMMAND AND OUTPUT
 
+```
 dir %userprofile%\Desktop\MyLab
-
+```
 ![4_dir](https://github.com/user-attachments/assets/8a095fc7-fb1e-4b82-9dff-46ed48ac79c9)
 
 Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
 
 ## COMMAND AND OUTPUT
 
+```
 mkdir %userprofile%\Desktop\Backup
-
+```
 ![5_backup](https://github.com/user-attachments/assets/40881217-36a6-4c3b-9a98-084c1d4f06b7)
 
 copy MyFile.txt %userprofile%\Desktop\Backup
@@ -74,8 +78,9 @@ Move the "MyLab" directory to the "Documents" folder.
 
 ## COMMAND AND OUTPUT
 
+```
 mkdir %userprofile%\Desktop\Documents
-
+```
 move MyLab Documents
 
 ![9_modified batch1](https://github.com/user-attachments/assets/6db49bc8-0724-45f1-a9f3-ff9ef8d5ffbf)
@@ -85,10 +90,12 @@ Create a batch script named "BackupScript.bat" that creates a backup of files wi
 
 ## COMMAND
 
+```
 @echo off
 mkdir %userprofile%\Desktop\DocBackup
 copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
 echo Backup completed successfully!
+```
 
 ## OUTPUT
 
