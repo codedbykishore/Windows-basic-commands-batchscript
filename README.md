@@ -32,7 +32,8 @@ Create a directory named "MyLab" on the desktop.
 
 mkdir %userprofile%\Desktop\MyLab
 
-![alt text](1_mkdir.png)
+![1_mkdir](https://github.com/user-attachments/assets/b2c97dd3-0863-4481-8a62-027ad75b56f0)
+
 
 Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
 
@@ -41,11 +42,12 @@ Change to the "MyLab" directory and create an empty text file named "MyFile.txt"
 
 cd %userprofile%\Desktop\MyLab
 
-![alt text](2_cd.png)
+![2_cd](https://github.com/user-attachments/assets/4749e48a-d6c2-465c-b66c-467b535e741c)
+
 
 type nul > MyFile.txt
+![3_myfile](https://github.com/user-attachments/assets/264f09a9-9ab1-4319-8ffb-087580360d88)
 
-![alt text](3_myfile.png)
 
 List the contents of the "MyLab" directory.
 
@@ -54,7 +56,7 @@ List the contents of the "MyLab" directory.
 
 dir %userprofile%\Desktop\MyLab
 
-![alt text](4_dir.png)
+![4_dir](https://github.com/user-attachments/assets/8a095fc7-fb1e-4b82-9dff-46ed48ac79c9)
 
 Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
 
@@ -62,11 +64,11 @@ Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
 
 mkdir %userprofile%\Desktop\Backup
 
-![alt text](5_backup.png)
+![5_backup](https://github.com/user-attachments/assets/40881217-36a6-4c3b-9a98-084c1d4f06b7)
 
 copy MyFile.txt %userprofile%\Desktop\Backup
 
-![alt text](6_copy.png)
+![6_copy](https://github.com/user-attachments/assets/15c04a42-8b5e-4005-a4d6-eefff8a529c2)
 
 Move the "MyLab" directory to the "Documents" folder.
 
@@ -76,7 +78,7 @@ mkdir %userprofile%\Desktop\Documents
 
 move MyLab Documents
 
-![alt text](<9_modified batch1.png>)
+![9_modified batch1](https://github.com/user-attachments/assets/6db49bc8-0724-45f1-a9f3-ff9ef8d5ffbf)
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
@@ -90,19 +92,19 @@ echo Backup completed successfully!
 
 ## OUTPUT
 
-![alt text](10_batch1.png)
+![10_batch1](https://github.com/user-attachments/assets/af5e3830-2b8c-465d-9ccb-b6c15b159502)
 
 ## COMMAND
-
-@echo off
-mkdir %userprofile%\Desktop\DocBackup
-copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
-del %userprofile%\Documents\*.docx
-echo Backup and deletion completed successfully!
-
+```
+  @echo off
+  mkdir %userprofile%\Desktop\DocBackup
+  copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+  del %userprofile%\Documents\*.docx
+  echo Backup and deletion completed successfully!
+```
 ## OUTPUT
 
-![alt text](<11_modified batch1.png>)
+![11_modified batch1](https://github.com/user-attachments/assets/db602c4e-116e-4c0c-84d3-9e750b2d6ebe)
 
 # RESULT:
 The commands/batch files are executed successfully.
